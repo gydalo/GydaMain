@@ -1,0 +1,25 @@
+html {
+    scroll-behavior: smooth;
+    }
+
+nav {
+    position: fixed;
+    top: 0px;
+    height: 40px;
+    width: 100%;
+    background: #efefef;
+
+}
+
+main {
+    margin-top: 60px;
+}
+
+section::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    height: 20px;
+    margin-top: 20px;
+}

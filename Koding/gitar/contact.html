@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The best Guitars from Guitar Kings | Contact us">
+    <link rel="stylesheet" href="index.css">
+    <title>Guitar Kings | Contact</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Guitar Kings</a>
+        <nav> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="guitars.html">Guitars</a></li>
+            <li><a href="Contact.html" class="current">Contact</a></li>
+        </nav>
+    </header>
+    <main class="contact">
+    <h1>Contact</h1>
+    <form action="form-success.php" method="POST">
+        <div class="form-wrapper">
+        <section>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="Email">Email</label>
+            <input type="email" name="email" id="email" required>
+           <label for="guitar">Guitar</label>
+            <select name="Guitar" id="guitar">
+                <option value="Option one">Adirondack Red</option>
+                <option value="Option two">Adirondack Blue</option>
+                <option value="Option three">Adirondack Green</option>
+            </select>
+            <div>
+                <label for="email-updates">Sign up for email updates.</label>
+                <input type="checkbox" id="email-updates">
+            </div>
+        </section>
+        <section>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send now" class="cta">
+        </section>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
+<footer>
+    Copyright &copy;
+</footer>
