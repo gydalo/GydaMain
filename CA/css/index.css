@@ -140,13 +140,24 @@ color: #000a1b;
 
 .background-section {
     background-repeat: no-repeat;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.5046393557422969) 38%, rgba(0,0,0,0) 100%), url('images/iStock-1354761874.jpg');
+    background-image: url('images/iStock-1354761874.jpg');
     background-size: cover;
     min-height: 30vh;
     font-size: 2rem;
     background-position-x: left;
     background-position-y: top;
     position: relative;
+}
+
+.background-section::after {
+    content: "";
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.5046393557422969) 38%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 @media (min-width: 600px){
