@@ -21,6 +21,10 @@ p {
     font-size: 1.5rem;
 }
 
+.logo-contact {
+    width: 300px;
+}
+
 .logo img  {
     max-width: 110px;
     float: left;
@@ -156,6 +160,7 @@ color: #000a1b;
 }
 
 .contactpage {
+    padding-left: 30px;
     display: grid;
     width: 100%;
     margin: 0 auto;

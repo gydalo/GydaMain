@@ -108,6 +108,8 @@ color: #000a1b;
 
 .aboutus {
 grid-area: aboutus;
+padding-left: 30px;
+padding-right: 30px;
 }
 
 .aboutus1 {
