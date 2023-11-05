@@ -140,7 +140,7 @@ color: #000a1b;
 
 .background-section {
     background-repeat: no-repeat;
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.5046393557422969) 38%, rgba(0,0,0,0) 100%), url("images/iStock-1354761874.jpg");
+    background-image: url("images/iStock-1354761874");
     background-size: cover;
     min-height: 30vh;
     font-size: 2rem;
