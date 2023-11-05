@@ -140,7 +140,7 @@ color: #000a1b;
 
 .background-section {
     background-repeat: no-repeat;
-    background-image: url('images/iStock-1354761874.jpg');
+    background-image: url(images/iStock-1354761874.jpg);
     background-size: cover;
     min-height: 30vh;
     font-size: 2rem;
