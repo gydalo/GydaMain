@@ -1,0 +1,425 @@
+header h1 {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+}
+
+h2, h3, h4 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p, li, table, nav, address {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.header {
+    background-image: url(images-resized/scott-webb-102825.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 90vh;
+    height: 100px;
+    padding: 100px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    min-height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: space-evenly;
+}
+
+.headermenu {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 102px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.header-button {
+    padding: 10px;
+    list-style-type: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.fa-bars {
+font-size: 1.5rem;
+color: #000000;
+}
+
+main {
+    padding: 10px;
+}
+
+.border {
+    border: 1px solid #e4e4e4;
+}
+
+.about-museum {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    padding: 50px 20px 20px 20px;
+}
+
+.info {
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+padding-right: 0px;
+padding-bottom: 40px;
+}
+
+.image-1 {
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 2;
+}
+
+.image-2 {
+grid-column-start: 1;
+grid-row-start: 3;
+}
+
+.image-3 {
+grid-column-start: 2;
+grid-row-start: 3;
+}
+
+.image-1 img,
+.image-2 img,
+.image-3 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    object-fit:cover ;
+}
+
+.practical-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px 20px 20px 20px;
+}
+
+.flexbox-item {
+    margin: 10px;
+    padding: 50px;
+    border-radius: 60px;
+    flex-basis: 100%;
+    align-self: stretch;
+    }
+
+.flexbox-item-1 {
+    background-color: #E6AAB3;
+}
+
+.flexbox-item-2 {
+    background-color: #FFE6AA;
+}
+
+.flexbox-item-3 {
+    background-color: #D4E7AA;
+}
+
+.mammoth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px 30px 30px; 
+    font-style: italic;
+}
+
+.mammoth img {
+    width: 100%;
+}
+
+.text-explore {
+    text-align: center;
+    padding: 30px;
+}
+
+.explore img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    padding: 40px;
+}
+
+.explore {
+    background-color: #C1D3DE;
+    margin: 40px;
+    border-radius: 60px;
+}
+
+.explore-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 0px 30px 0px;
+}
+
+.image-kids {
+grid-row-start: 1;
+grid-column-start: 2;
+}
+
+.image-teachers {
+grid-row-start: 3;
+grid-column-start: 2;
+}
+
+.image-researchers {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    }
+
+.text-kids {
+ grid-row-start: 2;
+ grid-column-start: 2;
+ padding: 0px 40px 0px 40px;
+}
+
+.text-teachers {
+grid-row-start: 4;
+grid-column-start: 2;
+padding: 0px 40px 0px 40px;
+}
+
+.text-researchers {
+    grid-row-start: 6;
+    grid-column-start: 2;
+    padding: 0px 40px 0px 40px;
+    }
+
+
+.gallery {
+    padding: 100px 30px 100px 30px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 10px;
+}
+
+footer {
+    background-color: #AAAAAA;
+    background-size: cover;
+    padding: 30px;
+    padding-left: 50px;
+    margin-top: 80px;
+    height: auto;
+    }
+
+    .footer-info {
+        display: inline;
+        padding: 30px;
+    }
+
+    @media (min-width: 800px){
+        main {
+            padding: 80px;
+        }
+
+        .gallery img {
+            width: 400px;
+            height: 400px;
+        }
+
+        .header {
+            background-size: 100vh;
+        }
+
+        .explore img {
+            width: 300px;
+            height: 300px;
+            }
+    }
+
+@media (min-width: 1000px){
+    .practical-info {
+        flex-wrap: nowrap;
+        }
+
+    .header {
+        background-size: 190vh;
+    }
+
+        header label {
+            display: none;
+        }
+
+        header {
+            justify-content: space-evenly;
+        }
+
+        .header-button {
+            padding: 0px;
+        }
+    
+        .headermenu {
+            display: block;
+            position: static;
+            border: none;
+        }
+    
+        nav li {
+            display: inline-block;
+            padding: 0px;
+        }
+
+        .info {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            padding-right: 50px;
+            }
+            
+            .image-1 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            }
+
+            .image-2 {
+            grid-column-start: 4;
+            grid-row-start: 2;
+            }
+
+            .image-3 {
+            grid-column-start: 5;
+            grid-row-start: 2;
+            }
+
+            .about-museum {
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 2fr 2fr 1fr 2fr 2fr;
+                padding: 50px 30px 0px 30px;
+            }
+
+            .mammoth {
+                margin-bottom: 100px;
+            }
+
+            .explore-div {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+
+            .explore img {
+                width: 300px;
+                height: 500px;
+                }
+
+            .image-researchers img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .image-kids {
+                grid-row-start: 1;
+                grid-column-start: 3;
+                
+                }
+                
+                .image-teachers {
+                grid-row-start: 2;
+                grid-column-start: 2;
+                }
+                
+                .image-researchers {
+                    grid-row-start: 3;
+                    grid-column-start: 3;
+                    }
+                
+                .text-kids {
+                 grid-row-start: 1;
+                 grid-column-start: 2;
+                }
+                
+                .text-teachers {
+                grid-row-start: 2;
+                grid-column-start: 3;
+                }
+                
+                .text-researchers {
+                    grid-row-start: 3;
+                    grid-column-start: 2;
+                    }
+
+}
+
+@media (min-width: 1300px){
+
+    .info {
+        padding-right: 10px;
+        line-height: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        }
+            
+    
+    .about-museum {
+        padding: 100px 100px 0px 100px;
+        }
+
+    .practical-info, .mammoth {
+        padding: 100px 100px 0px 100px;
+        }
+
+    .explore img {
+        width: 400px;
+        height: 400px;
+        }
+
+    .explore {
+        margin: 80px;
+    }
+}

@@ -1,0 +1,181 @@
+header h1 {
+    font-size: 1.5rem;
+}
+
+main h1 {
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+}
+
+h2, h3, h4 {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p, li, table, nav {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.758), #0000009d), url(images-resized/celso-405219.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 90vh;
+    background-repeat: no-repeat;
+    padding: 100px;
+    text-align: center;
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    min-height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: space-evenly;
+}
+
+.headermenu {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 102px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.header-button {
+    padding: 10px;
+    list-style-type: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+.fa-bars {
+font-size: 1.5rem;
+color: #000000;
+}
+
+.border {
+    border: 1px solid #e4e4e4;
+}
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.flexbox-item {
+    margin: 30px;
+    flex-basis: 100%;
+    }
+
+.flexbox-container-images {
+display: flex;
+justify-content: center;
+margin-top: 60px;
+margin-bottom: 60px;
+flex-wrap: wrap;
+}
+
+.flexbox-container-images img {
+width: 300px;
+height: 500px;
+}
+
+footer {
+    background-color: #AAAAAA;
+    background-size: cover;
+    padding: 30px;
+    padding-left: 50px;
+    margin-top: 80px;
+    height: auto;
+    }
+
+    .footer-info {
+        display: inline;
+        padding: 30px;
+    }
+
+    @media (min-width: 800px){
+        main {
+            padding: 80px;
+        }
+
+        .header {
+            background-size: 190vh;
+        }
+
+        .flexbox-container-images img {
+            width: 400px;
+            height: 600px;
+            }
+}
+
+@media (min-width: 1000px){
+        header label {
+            display: none;
+        }
+
+        header {
+            justify-content: space-evenly;
+        }
+
+        .header-button {
+            padding: 0px;
+        }
+    
+        .headermenu {
+            display: block;
+            position: static;
+            border: none;
+        }
+    
+        nav li {
+            display: inline-block;
+            padding: 0px;
+        }
+
+        .flexbox-container {
+           flex-wrap: nowrap;
+        }
+
+        .flexbox-item {
+            margin: 60px;
+            }
+                
+}
