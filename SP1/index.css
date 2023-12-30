@@ -178,55 +178,56 @@ grid-row-start: 3;
 }
 
 .explore img {
-    width: 100%;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     object-position: top;
     padding: 40px;
+    place-items: center;
 }
 
 .explore {
     background-color: #C1D3DE;
-    margin: 40px;
+    margin: 20px;
     border-radius: 60px;
 }
 
 .explore-div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 30px 0px 30px 0px;
 }
 
 .image-kids {
 grid-row-start: 1;
-grid-column-start: 2;
+grid-column-start: 1;
 }
 
 .image-teachers {
 grid-row-start: 3;
-grid-column-start: 2;
+grid-column-start: 1;
 }
 
 .image-researchers {
     grid-row-start: 5;
-    grid-column-start: 2;
+    grid-column-start: 1;
     }
 
 .text-kids {
  grid-row-start: 2;
- grid-column-start: 2;
+ grid-column-start: 1;
  padding: 0px 40px 0px 40px;
 }
 
 .text-teachers {
 grid-row-start: 4;
-grid-column-start: 2;
+grid-column-start: 1;
 padding: 0px 40px 0px 40px;
 }
 
 .text-researchers {
     grid-row-start: 6;
-    grid-column-start: 2;
+    grid-column-start: 1;
     padding: 0px 40px 0px 40px;
     }
 

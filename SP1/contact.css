@@ -142,14 +142,13 @@ button {
 
 .flexbox-container {
     display: flex;
-    align-items: center;
     justify-content: start;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .flexbox-item {
-    margin: 60px;
+    margin: 30px;
     }
 
 footer {
@@ -185,6 +184,10 @@ footer {
             padding: 100px;
             }
 
+        .flexbox-container {
+            justify-content: center;
+        }
+
     }
 
     @media (min-width: 1000px){
@@ -213,6 +216,11 @@ footer {
 
         .flexbox-item {
             height: 300px;
+            margin: 50px;
             }
+
+.flexbox-container {
+    flex-wrap: nowrap;
+}    
 
         }
