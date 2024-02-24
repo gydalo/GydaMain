@@ -1,0 +1,270 @@
+
+
+<div class="container-products">
+        <div class="product">
+            <img src="/CA-JS1/images/al-elmes-LqE03pfApgk-unsplash.jpg" alt="Man outside in snow with red jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/RainyDays_Jacket1.jpg" alt="Red and gray jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/andrey-novik-9HPB26f4tqU-unsplash.jpg"
+                alt="Man standing in woods with a brown jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/RainyDays_Jacket2.jpg" alt="Gray jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/anthony-riera-dzgQVct0Jrs-unsplash.jpg"
+                alt="Man standing outside in snow with a green jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/RainyDays_Jacket3.jpg" alt="Red and black jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/bhavya-shah-g28-mHHl-Z0-unsplash.jpg" alt="Woman wearing a red and purple jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/RainyDays_Jacket4.jpg" alt="Black jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/RainyDays_Jacket5.jpg" alt="Gray jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/george-dumitrache-OOgWJN8qJyA-unsplash.jpg"
+                alt="Man outside wearing a black jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/jasmine-coro-Iz8texFGeHI-unsplash.jpg"
+                alt="Woman wearing a black jacket in the snow.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+
+        <div class="product">
+            <img src="/CA-JS1/images/karsten-winegeart-MaDzy3RLiZA-unsplash.jpg"
+                alt="Man holding ski wearing a green jacket.">
+            <p>Wind-Resistant Jacket</p>
+            <p>$ 300</p>
+            <button class="button-standard">Add to cart</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    // Fra her var gammel kode:
+
+    
+/*const API_RainyDays = "https://api.noroff.dev/api/v1/rainy-days";
+const productList = document.getElementById("displayProducts");
+
+function displayProducts(products) {
+    let html = "";
+    for(let i = 0; i < products.length; i++) {
+    const title = products[i].title;
+    const body = products[i].body;
+    console.log('Title:', title, 'Body:', body);
+    document.getElementById('')
+    }
+}
+
+async function doFetch(url) {
+try {
+const response = await fetch(url);
+const json = await response.json();
+return json;
+} catch (error) {
+console.log('Error', error);
+}
+}
+
+async function main() {
+const products = await doFetch(API_RainyDays);
+displayProducts(products);
+}
+
+main();
+*/
+
+
+import { API_RAINY_DAYS } from "./scripts/common/constants.mjs";
+import { doFetch } from "./scripts/utils/doFetch.mjs";
+API_RAINY_DAYS
+
+/*function createCart() {
+    const cart = localStorage.getItem('cart');
+    if (cart) {
+        console.log('Add to cart', product);
+    } else {
+        localStorage.setItem('cart',[]);
+    }
+}
+
+function addToCart(product) {
+    console.log('Add to cart', product);
+}
+*/
+
+function generateProductInfoHtml(product) {
+    const productContainer = document.createElement('div');
+
+    const productHeading = document.createElement('h3');
+    productHeading.textContent = product.title;
+
+    const productDescription = document.createElement('p');
+    productDescription.textContent = product.description;
+
+    /*const productBuyButton = document.createElement('button');
+    productBuyButton.textContent = 'Buy';
+    productBuyButton.addEventListener('click', () => {
+        console.log('id', product.id); 
+    })*/
+
+
+    productContainer.append(productHeading, productDescription);
+
+    return productContainer;
+}
+
+
+async function displayProducts(products) {
+    const displayContainer = document.getElementById('display-container')
+    console.log(displayContainer);
+
+    products.forEach(function (product) {
+        const productInfoHtml = generateProductInfoHtml(product);
+        displayContainer.appendChild(productInfoHtml);
+    });
+}
+
+async function main() {
+    try {
+        const products = await doFetch(API_RAINY_DAYS);
+        displayProducts(products);
+        console.log(products);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+main();
+
+
+Checkout html:
+
+<div>
+        <div>
+        <h2>Order</h2>
+        <p>ArcticShield Pro-Elite FrostGuard Jacket</p>
+        <p>$ 300</p>
+        <p>Size: M</p>
+        <p>Remove</p>
+        <p>Tax: $10</p>
+        <p>Shipping: $10:</p>
+        <p>Total: $320</p>
+    </div>
+        <div class="form">
+        <h2>Checkout</h2>
+        <form action="">
+            <div class="row">
+            <div class="input-group">
+            <input type="text" name="name" placeholder="First name" id="name" class="form__input">
+            </div>
+            <div class="input-group">
+            <input type="text" name="name" placeholder="Last name" id="name" class="form__input">
+            </div>
+            </div>
+            <div class="row">
+            <div class="input-group">
+            <input type="email" placeholder="Email" name="email" id="email" class="form__input">
+            </div>
+            <div class="input-group">
+            <input type="number" placeholder="Phone No." name="number" id="number" class="form__input">
+            </div>
+            <input type="address" placeholder="Address" name="address" id="address" class="form__input">
+            </div>
+            
+            <button type="submit">Checkout</button>
+        </form>
+        </div>
+        </div>
+
+
+        product page before:
+
+            <div class="product-page">
+        <div class="product-page-flex">
+        <div class="product-page-flex-image">
+    <img src="/CA-JS1/images/jasmine-coro-Iz8texFGeHI-unsplash.jpg" alt="Woman smiling in black jacket.">
+</div>
+    <div class="product-page-flex-info">
+    <h1>ArcticShield Pro-Elite FrostGuard Jacket</h1>
+    <p>$ 300</p>
+    <p>Stay warm and stylish this winter with the cutting-edge ArcticShield Pro-Elite FrostGuard Jacket, a true marvel of winter wear technology. 
+        Designed for the fearless urban explorer and winter enthusiast, this jacket seamlessly blends performance, comfort, and fashion.</p>
+
+    <p>Features:</p>
+    <ul>
+    <li>Thermal Insulation: The jacket is equipped with quality insulation to keep you comfortably warm without the bulk.</li>
+    <li>Water-Resistant Outer Shell: A durable outer shell repels light rain and snow, ensuring you stay dry in unpredictable winter weather.</li>
+    <li>High Collar: The jacket features a high collar for added wind protection, keeping your neck and face shielded from chilly gusts.</li>
+    <li>Functional Pockets: Convenient pockets provide practical storage space while keeping your hands warm.</li>
+    <li>Classic Design: A timeless design with neutral colors ensures versatility and a stylish winter look.</li>
+    </ul>
+    <p>This ArcticLite Essential Winter Jacket prioritizes simplicity and functionality, making it a reliable and stylish choice for your 
+    winter adventures.</p>
+    <button class="size-button">XS</button>
+    <button class="size-button">S</button>
+    <button class="size-button">M</button>
+    <button class="size-button">L</button>
+    <button class="size-button">XL</button>
+    <button class="size-button">XXL</button>
+    <div class="button-productpage">
+    <button class="button-standard" id="add-to-cart">Add to cart</button>
+    </div>
+    <button>Reset Cart</button>
