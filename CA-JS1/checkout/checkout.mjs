@@ -1,4 +1,4 @@
-import { addToCart, decreaseQuantity, clearCart } from "cart.mjs";
+import { addToCart, decreaseQuantity, clearCart } from "../cart.mjs";
 
 const purchaseButton = document.getElementById('clear-cart');
 purchaseButton.addEventListener('click', () => {
