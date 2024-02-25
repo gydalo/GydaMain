@@ -1,7 +1,7 @@
 
 
-import { API_RAINY_DAYS } from "scripts/common/constants.mjs";
-import { doFetch } from "scripts/utils/doFetch.mjs";
+import { API_RAINY_DAYS } from "constants.mjs";
+import { doFetch } from "doFetch.mjs";
 
 function createCart() {
     const cart = localStorage.getItem('cart');
