@@ -2,9 +2,9 @@
 // Check the repo in github
 
 
-import { API_RAINY_DAYS } from "/constants.mjs";
-import { doFetch } from "doFetch.mjs";
-import { addToCart, createCart } from "cart.mjs";
+import { API_RAINY_DAYS } from "./constants.mjs";
+import { doFetch } from "./doFetch.mjs";
+import { addToCart, createCart } from "./cart.mjs";
 
 const femaleButton = document.getElementById('female');
 const maleButton = document.getElementById('male');
