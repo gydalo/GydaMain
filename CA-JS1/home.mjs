@@ -1,6 +1,5 @@
-// Make it possible to view the products on a seperate page
-// Make it possible to change categories (men, women)
-//order confirmation
+// Check why the '-' button deletes all
+// Check the repo in github
 
 
 import { API_RAINY_DAYS } from "./scripts/common/constants.mjs";
@@ -113,8 +112,6 @@ async function main() {
 }
 
 main();
-
-
 
 
 
