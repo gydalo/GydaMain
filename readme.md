@@ -5,6 +5,8 @@ First Semester, Fall 2023:
 [Semester Project 1, Fall 2023](https://gydalo.github.io/GydaMain/SP1/index.html)
 
 
+
+
 Second Semester, Spring 2024:
 
 [Course assignment 2, Spring 2024](https://gydalo.github.io/GydaMain/CA-JS1/)
