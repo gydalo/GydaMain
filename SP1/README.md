@@ -1,6 +1,6 @@
 # Community Science Museum - Semester Project Fall 2023
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://i.postimg.cc/q7Np4ZNW/Skjermbilde-2024-05-28-135022.png)
 
 For my semester project, I designed a website for a fictional museum called Community Science Museum using Figma. Once satisfied with the design, I coded it using HTML and CSS. The website includes a homepage with a description of the museum, opening hours, a gallery, and sections for the shop, cafe, events, and contact information. The target audience is primary and middle school children and families with young children.
 
