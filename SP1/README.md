@@ -32,6 +32,6 @@ This project helped me improve my design skills with Figma and my coding skills 
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/gyda-lofthus-301069291/)
-[My Github page]([www.github.com](https://github.com/gydalo/GydaMain/)
+[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/gyda-lofthus-301069291/))
+[My Github page]([www.github.com](https://github.com/gydalo/GydaMain/))
 
