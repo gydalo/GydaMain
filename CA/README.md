@@ -1,6 +1,6 @@
 # Gamehub - Course assignment Fall 2023
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://i.postimg.cc/50LHjcrL/Skjermbilde-8.png)
 
 In this course assignment, I created a game purchasing platform using HTML and CSS to learn the basics of CSS and web development. While not functional, it helped improve my skills in making visually appealing and well-structured web pages.
 
