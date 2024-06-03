@@ -30,7 +30,5 @@ This project helped me improve my design skills with Figma and my coding skills 
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My LinkedIn page]([https://www.linkedin.com/in/gyda-lofthus-301069291/])
+[My LinkedIn page](https://www.linkedin.com/in/gyda-lofthus-301069291/)
 
