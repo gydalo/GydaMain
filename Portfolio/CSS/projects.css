@@ -1,0 +1,61 @@
+.container-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'projects'
+    'box1'
+    'box2'
+    'button';
+    padding: 10px;
+
+}
+
+.projects-box {
+    grid-area: projects;
+    justify-self: center;
+}
+
+.box-1 {
+    grid-area: box1;
+    justify-self: center;
+    align-content: center;
+    margin: 0 30px
+}
+
+.box-2 {
+    grid-area: box2;
+    justify-self: center;
+    align-content: center;
+    margin: 0 30px;
+}
+
+.homepage-button {
+    margin-top: 40px;
+}
+
+.button {
+    justify-self: center;
+}
+
+@media (min-width: 1000px){
+    .container-projects {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'projects box2'
+        'box1 box2'
+        'box1 button';
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .homepage-button {
+        margin-top: auto;
+
+    }
+
+    .button {
+        justify-self: end;
+    }
+
+
+}

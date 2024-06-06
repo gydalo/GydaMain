@@ -1,0 +1,61 @@
+.container-aboutme {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'name'
+    'box2'
+    'box1'
+    'button';
+    padding: 10px;
+
+}
+
+
+.name-box {
+    grid-area: name;
+    justify-self: center;
+}
+
+.box-1 {
+    grid-area: box1;
+    justify-self: center;
+    align-content: center;
+    margin: 0 30px
+}
+
+.box-2 {
+    grid-area: box2;
+    justify-self: center;
+    margin: 0 30px;
+}
+
+.homepage-button {
+    grid-area: homepage;
+    justify-self: center;
+    align-content: center;
+    margin: 0 30px
+}
+
+
+@media (min-width: 1000px){
+    .container-aboutme {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'name box1'
+        'box2 box1'
+        'box2 button';
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .homepage-button {
+        justify-self: end;
+        align-content: end;
+        margin: 0 30px
+    }
+
+    .button {
+        justify-self: end;
+    }
+
+}

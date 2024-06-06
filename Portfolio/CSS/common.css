@@ -1,0 +1,86 @@
+html {
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    padding: 10px 30px 10px 30px;
+    gap: 15px;
+    align-content: center;
+    font-size: 1.5rem;
+}
+
+.fa-github:hover {
+    cursor: pointer;
+}
+
+.fa-paper-plane:hover {
+    cursor: pointer;
+}
+
+
+
+body {
+    background-color: #BFD3C1;
+}
+
+h1 {
+    font-family: "Italiana", sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 80%;
+}
+
+h2 {
+    font-family: "Rokkitt", serif;
+    font-weight: 400;
+}
+
+p, a, button {
+    font-family: "Gudea", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+
+button {
+    font-size: 1rem;
+    background-color: #B09398;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+    background-color: #CADACB;
+    border: solid 1px #B09398;
+    cursor: pointer;
+}
+
+.border {
+    border: 1px solid #B09398;
+    margin: 0px 10px 10px 10px;
+    padding: 10px
+}
+
+@media (min-width: 1000px){
+    h1 {
+        font-size: 6rem;
+    }
+
+    .border {
+        padding: 30px;
+        margin: 0px 30px 30px 30px;
+    }
+}
