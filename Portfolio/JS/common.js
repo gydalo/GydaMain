@@ -22,3 +22,9 @@ hotView.addEventListener("click", function() {
     window.open("https://norofffeu.github.io/FED1-PE1-gydalo/index.html");
 })
 
+const github = document.querySelector("#github");
+
+github.addEventListener("click", function() {
+    window.open("https://github.com/gydalo");
+})
+
