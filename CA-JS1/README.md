@@ -1,6 +1,6 @@
 # Rainy Days - Course assignment spring 2023
 
-![image]([https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png](https://i.postimg.cc/QNwhhjbm/Skjermbilde-9.png)
+![image]([https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png](https://i.postimg.cc/QNwhhjbm/Skjermbilde-9.png))
 
 "Rainy Days" is a project for a fake store called Rainy Days. It fetches product information from an API and includes a functional cart for adding and removing items. The checkout process clears the cart, although actual purchases are not processed. Design improvements are planned for the future.
 
