@@ -28,6 +28,10 @@ Children and Families: The website is designed to be informative and visually ap
 
 This project helped me improve my design skills with Figma and my coding skills with HTML and CSS, resulting in a user-friendly website. It will also help me make make nicer looking design and clean CSS in future projects.
 
+## Built with
+- HTML
+- CSS
+
 ## Contact
 
 [My LinkedIn page](https://www.linkedin.com/in/gyda-lofthus-301069291/)
