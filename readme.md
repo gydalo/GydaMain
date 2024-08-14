@@ -15,4 +15,5 @@ Second Semester, Spring 2024:
 
 Other assignments:
 [Rock, paper, scissors](https://gydalo.github.io/GydaMain/JS-Full-Course/10-rock-paper-scissors-done.html)
+
 [Source](https://www.youtube.com/watch?v=EerdGm-ehJQ)
