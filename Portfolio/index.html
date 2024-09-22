@@ -5,47 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyda Portfolio</title>
     <script src="https://kit.fontawesome.com/aa01c91341.js" crossorigin="anonymous"></script>
-    <script defer src="JS/index.js"></script>
-    <script defer src="JS/common.js"></script>
-    <link rel="stylesheet" href="CSS/common.css">
-    <link rel="stylesheet" href="CSS/index.css">
+    <script defer src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Italiana&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
-    <i id="github" class="fa-brands fa-github"></i>
-   <!-- <i id="mail" class="fa-regular fa-paper-plane"></i> -->
+    <nav id="desktop-nav">
+        <div class="logo-name">Gyda Lofthus <br> <div class="logo-frontend">Frontend Developer</div></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo-name">Gyda Lofthus <br> <div class="logo-frontend">Frontend Developer</div></div>
+        <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+</div>
+    </nav>
 </header>
-    <div class="border">
-        <div class="grid-container">
-    <div class="container-first">
-        <h1>Hi, my <br> name is <br> Gyda,</h1>
-        <p>I'm a Front-end Development student based in Stavanger, Norway.</p>
+<main>
+<div class="home">
+    <h1>Hi, my</h1>
+    <h1>name is</h1>
+    <h1>Gyda</h1>
+    <div>
+        <button class="btn-gray">Download CV</button>
+        <button class="btn-white">Contact info</button>
+        <img class="logo-github" src="/images/github.png" alt="Github logo">
+        <img class="logo-link" src="/images/linkedin.png" alt="Linkedin logo">
     </div>
-    <div class="button-first-grid">
-        <button id="aboutMe" class="about-me">About me</button>
-    </div>
-    <div class="container-second">
-        <h2>My projects</h2>
-    <li>
-        <a href="#" id="gameHub">Gamehub</a>
-    </li>
-    <li>
-        <a href="#" id="csm">Community Science Museum</a>
-    </li>
-    <li>
-        <a href="#" id="rainyDays">Rainy Days</a>
-    </li>
-    <li>
-        <a href="#" id="hotView">HotView Labs</a>
-    </li>
-    </div>
-    <div class="button-second-grid">
-        <button id="moreInfo" class="more-info">More info</button>
-    </div>
-    </div>
-    </div>
+
+</div>
+
+<div class="about">
+
+</div>
+
+<div class="experience">
+
+</div>
+
+<div class="projects">
+
+
+</div>
+
+<div class="contact">
+
+</div>
+
+</main>
 </body>
 </html>
