@@ -9,6 +9,8 @@ function toggleMenu() {
 
 
 
+
+
 const gameHub = document.querySelector("#gameHub");
 
 gameHub.addEventListener("click", function() {
