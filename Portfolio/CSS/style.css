@@ -68,17 +68,6 @@ button {
     border: none;
 }
 
-/*
-header {
-    display: flex;
-    justify-content: end;
-    padding: 10px 30px 10px 30px;
-    gap: 15px;
-    align-content: center;
-    font-size: 1.5rem;
-} */
-
-/* Transition */
 
 a, button {
     transition: all 300ms ease;
@@ -294,6 +283,9 @@ section {
 /* About section */
 .box-about {
     display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+
 }
 
 .box-about h2 {
@@ -319,10 +311,51 @@ section {
 }
 
 /* Experience section */
+.experience h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
 .box-education {
     display: flex;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
 }
 
 .box-knowledge {
     display: flex;
+    justify-content: center;
+}
+
+.box-1-knowledge {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.title-frontend, .title-backend {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.box-2-knowledge {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.smaller-text {
+    font-size: 0.7rem;
+    font-style: italic;
+    color: #484848;
+    
 }
