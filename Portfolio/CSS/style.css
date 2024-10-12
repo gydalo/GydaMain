@@ -235,6 +235,10 @@ a:hover {
     padding: 5px;
 }
 
+.logo-link:hover, .logo-github:hover {
+    cursor: pointer;
+}
+
 /* Sections */
 section {
     padding-top: 10vh;
