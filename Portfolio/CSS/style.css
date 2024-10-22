@@ -99,7 +99,7 @@ button:hover {
 
 .banner-slide {
     display: inline-block;
-    animation: 5s slide infinite linear;
+    animation: 10s slide infinite linear;
     padding-right: 200vh;
 }
 
