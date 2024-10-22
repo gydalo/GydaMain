@@ -1,189 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gyda Portfolio</title>
-    <script src="https://kit.fontawesome.com/aa01c91341.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/aa01c91341.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="JS/script.js"></script>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/mediaqueries.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Italiana&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-    <nav id="desktop-nav">
-        <div class="logo-name">Gyda Lofthus <br> <div class="logo-frontend">Frontend Developer</div></div>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaqueries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Italiana&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo-name">
+          Gyda Lofthus <br />
+          <div class="logo-frontend">Frontend Developer</div>
+        </div>
         <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo-name">Gyda Lofthus <br> <div class="logo-frontend">Frontend Developer</div></div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo-name">
+          Gyda Lofthus <br />
+          <div class="logo-frontend">Frontend Developer</div>
+        </div>
         <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+          <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-        <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
-</div>
-    </nav>
-</header>
-<main>
-<section class="home">
-    <div class="text-profile-pic">
-    <div class="text">
-    <h1>Hi, my</h1>
-    <h1>name is</h1>
-    <h1>Gyda</h1>
-    </div>
-    <div class="profile-pic">
-        <img  src="./images/Gyda (1).jpeg" alt="Image of me">
-    </div>
-</div>
-    <div class="button-home">
-        <button class="btn-gray" onclick="window.open('./images/CV-engelsk.pdf')">Download CV</button>
-        <button class="btn-white" onclick="location.href='./#contact'">Contact info</button>
+      </nav>
+    </header>
+    <main>
+      <section class="home">
+        <div class="text-profile-pic">
+          <div class="text">
+            <h1>Hi, my</h1>
+            <h1>name is</h1>
+            <h1>Gyda</h1>
+          </div>
+          <div class="profile-pic">
+            <img src="./images/Gyda (1).jpeg" alt="Image of me" />
+          </div>
+        </div>
+        <div class="button-home">
+          <button
+            class="btn-gray"
+            onclick="window.open('./images/CV-engelsk.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn-white" onclick="location.href='./#contact'">
+            Contact info
+          </button>
         </div>
         <div class="logo-home">
-        <img class="logo-github" src="./images/github.png" alt="Github logo" onclick="location.href='https://github.com/gydalo'"/>
-        <img class="logo-link" src="./images/linkedin.png" alt="Linkedin logo" onclick="location.href='https://www.linkedin.com/in/gyda-lofthus-301069291/'"/>
-    </div>
-</section>
-<section class="about" id="about">
-    <div class="title">
-    <h1>Get to know me</h1>
-    </div>
-    <div class="box-about">
-        <div class="box-1-about">
+          <img
+            class="logo-github"
+            src="./images/github.png"
+            alt="Github logo"
+            onclick="window.open('https://github.com/gydalo')";
+          />
+          <img
+            class="logo-link"
+            src="./images/linkedin.png"
+            alt="Linkedin logo"
+            onclick="window.open('https://www.linkedin.com/in/gyda-lofthus-301069291/')"
+          />
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="title">
+          <h1>Get to know me</h1>
+        </div>
+        <div class="box-about">
+          <div class="box-1-about">
             <h2>About me</h2>
-            <p>Hi, I'm Gyda, a 26-year-old woman and a Front-End Development student based in Stavanger, Norway.</p> <br>
-            <p>I enjoy learning front-end development, particularly discovering the various ways to solve problems and create 
-                functional solutions.</p>
+            <p>
+              Hi, I'm Gyda, a 26-year-old woman and a Front-End Development
+              student based in Stavanger, Norway.
+            </p>
+            <br />
+            <p>
+              I enjoy learning front-end development, particularly discovering
+              the various ways to solve problems and create functional
+              solutions.
+            </p>
+          </div>
+          <div class="image-dog">
+            <img src="./images/tur (2).jpg" alt="Me with my dog, Freddy" />
+          </div>
         </div>
-        <div class="image-dog">
-            <img src="./images/tur (2).jpg" alt="Me with my dog, Freddy">
-        </div>
-    </div>
         <div class="box-interests">
-        <div class="image-pole">
-            <img src="./images/pole (1).jpeg" alt="Me hanging upside-down on a pole">
-        </div>
-        <div class="box-2-about">
+          <div class="image-pole">
+            <img
+              src="./images/pole (1).jpeg"
+              alt="Me hanging upside-down on a pole"
+            />
+          </div>
+          <div class="box-2-about">
             <h2>Interests</h2>
-            <p>In my free time, I love going for walks and hikes, and I enjoy working out. I started pole dancing in the beginning of 2023, and 
-                recently picked up jogging. I also enjoy gaming when I find the time.</p>
+            <p>
+              In my free time, I love going for walks and hikes, and I enjoy
+              working out. I started pole dancing in the beginning of 2023, and
+              recently picked up jogging. I also enjoy gaming when I find the
+              time.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-<section class="experience" id="experience">
-    <div class="title">
-  <h1>Experience</h1>
-    </div>
-    <h2>Education</h2>
-    <div class="box-education">
-        <p>Two year Frontend Development on Noroff <br> Bachelors degree in social work</p>
-    </div>
-    <div class="box-knowledge">
-    <div class="box-1-knowledge">
-        <div class="title-frontend">
-        <h2>Frontend Development</h2>
-    </div>
-        <div class="grid-item">
-        <p>HTML</p>
-        <p class="smaller-text">Basic</p>
+      </section>
+      <section class="experience" id="experience">
+        <div class="title">
+          <h1>Experience</h1>
         </div>
-        <div class="grid-item">
-        <p>CSS</p>
-        <p class="smaller-text">Basic</p>
+        <h2>Education</h2>
+        <div class="box-education">
+          <p>
+            Two year Frontend Development on Noroff <br />
+            Bachelors degree in social work
+          </p>
         </div>
-        <div class="grid-item">
-        <p>JavaScript</p>
-        <p class="smaller-text">Still learning</p>
-        </div>
-        <div class="grid-item">
-        <p>TypeScript</p>
-        <p class="smaller-text">Still learning</p>
-        </div>
-        <div class="grid-item">
-        <p>React</p>
-        <p class="smaller-text">Going to learn</p>
-        </div>
-    </div>
+        <div class="box-knowledge">
+          <div class="box-1-knowledge">
+            <div class="title-frontend">
+              <h2>Frontend Development</h2>
+            </div>
+            <div class="grid-item">
+              <p>HTML</p>
+              <p class="smaller-text">Basic</p>
+            </div>
+            <div class="grid-item">
+              <p>CSS</p>
+              <p class="smaller-text">Basic</p>
+            </div>
+            <div class="grid-item">
+              <p>JavaScript</p>
+              <p class="smaller-text">Still learning</p>
+            </div>
+            <div class="grid-item">
+              <p>TypeScript</p>
+              <p class="smaller-text">Still learning</p>
+            </div>
+            <div class="grid-item">
+              <p>React</p>
+              <p class="smaller-text">Going to learn</p>
+            </div>
+          </div>
 
-    <div class="box-2-knowledge">
-        <div class="title-backend">
-        <h2>Backend Development</h2>
+          <div class="box-2-knowledge">
+            <div class="title-backend">
+              <h2>Backend Development</h2>
+            </div>
+            <div class="grid-item">
+              <p>Node JS</p>
+              <p class="smaller-text">Still learning</p>
+            </div>
+            <div class="grid-item">
+              <p>Express JS</p>
+              <p class="smaller-text">Still learning</p>
+            </div>
+          </div>
         </div>
-        <div class="grid-item">
-        <p>Node JS</p>
-        <p class="smaller-text">Still learning</p>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="title">
+          <h1>Projects</h1>
         </div>
-        <div class="grid-item">
-        <p>Express JS</p>
-        <p class="smaller-text">Still learning</p>  
+        <div class="project-flex">
+          <div class="hotview">
+            <div class="title-h2">
+            <h2>HotView Labs</h2>
+            </div>
+            <div class="image-projects">
+              <img src="/images/hotview.png" alt="Tech blog page" />
+            </div>
+            <div class="text-projects">
+              <p>
+                HotView Labs is a simulated blog page for a tech firm, focusing
+                on the latest tech gear. This was my first big Javascript
+                project.
+              </p>
+            </div>
+            <div class="btn-projects">
+              <button class="btn-gray"
+              alt="Live demo HotView Labs"
+              onclick="window.open('https://norofffeu.github.io/FED1-PE1-gydalo/index.html')">Live demo</button>
+              <button class="btn-white"
+              alt="Github HotView Labs"
+              onclick="window.open('https://github.com/NoroffFEU/FED1-PE1-gydalo')">Github</button>
+            </div>
+          </div>
+          <div class="rainy-days">
+            <div class="title-h2">
+            <h2>Rainy Days</h2>
+            </div>
+            <div class="image-projects">
+              <img
+                src="/images/rainydays.png"
+                alt="Store page for Rainy Days"
+              />
+            </div>
+            <div class="text-projects">
+              <p>
+                Rainy Days was my first project using JavaScript. The task was
+                to create a website fictional store page. I plan on finishing
+                the design soon.
+              </p>
+            </div>
+            <div class="btn-projects">
+              <button class="btn-gray"
+              alt="Live Demo Rainy Days"
+              onclick="window.open('https://gydalo.github.io/GydaMain/CA-JS1/')">Live demo</button>
+              <button class="btn-white"
+              alt="Github Rainy Days"
+              onclick="window.open('https://github.com/gydalo/GydaMain/tree/main/CA-JS1')">Github</button>
+            </div>
+          </div>
+          <div class="csm">
+            <div class="title-h2">
+            <h2>Science Museum</h2>
+            </div>
+            <div class="image-projects">
+              <img src="/images/csm.png" alt="Science museum page" />
+            </div>
+            <div class="text-projects">
+              <p>
+                The goal with this page was to create a website for a fictional
+                museum. This only uses HTML and CSS.
+              </p>
+            </div>
+            <div class="btn-projects">
+              <button class="btn-gray"
+              alt="Live demo Community Science Museum"
+              onclick="window.open('https://gydalo.github.io/GydaMain/SP1/index.html')">Live demo</button>
+              <button class="btn-white"
+              alt="Github Community Science Museum"
+              onclick="window.open('https://github.com/gydalo/GydaMain/tree/main/SP1')">Github</button>
+            </div>
+          </div>
         </div>
-    </div>
-    </div>
+      </section>
 
-</section>
-
-<section class="projects" id="projects">
-    <div class="title">
-    <h1>Projects</h1>
-    </div>
-    <div class="project-flex">
-    <div class="hotview">
-    <h2>HotView Labs</h2>
-    <div class="image-projects">
-    <img src="/images/hotview.png" alt="Tech blog page">
-    </div>
-    <div class="text-projects">
-    <p>HotView Labs is a simulated blog page for a tech firm, focusing on the latest tech gear. This was my first big Javascript project.</p>
-    </div>
-    <div class="buttons-projects">
-    <button class="btn-gray">Live demo</button>
-    <button class="btn-white">Github</button>
-    </div>
-    </div>
-    <div class="rainy-days">
-    <h2>Rainy Days</h2>
-    <img src="/images/rainydays.png" alt="Store page for Rainy Days">
-    <p>Rainy Days was my first project using JavaScript. The task was to create a website fictional store page. I plan on finishing the design soon. </p>
-    <button class="btn-gray">Live demo</button>
-    <button class="btn-white">Github</button>
-    </div>
-    <div class="csm">
-    <h2>Science Museum</h2>
-    <img src="/images/csm.png" alt="Science museum page">
-    <p>The goal with this page was to create a website for a fictional museum. This only uses HTML and CSS.</p>
-    <button class="btn-gray">Live demo</button>
-    <button class="btn-white">Github</button>
-    </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-<h1>Contact Me</h1>
-<h2>Mail</h2>
-<p>gydalofthus@hotmail.com</p>
-<h2>Linkedin</h2>
-<p>Gyda Lofthus</p>
-</section>
-<a href="#desktop-nav">To the top</a>
-</main>
-</body>
+      <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <h2>Mail</h2>
+        <p>gydalofthus@hotmail.com</p>
+        <h2>Linkedin</h2>
+        <p>Gyda Lofthus</p>
+      </section>
+      <a href="#desktop-nav">To the top</a>
+    </main>
+  </body>
 </html>
