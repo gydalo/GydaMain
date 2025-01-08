@@ -1,9 +1,75 @@
-@media (min-width: 1000px){
+@media (min-width: 800px){
+.button {
+    padding: 15px 30px 15px 30px;
+}
 
+
+/* Profile section */
+
+.profile-pic img {
+    width: 300px;
+    height: 300px;
+}
+
+.text-profile-pic {
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.profile-pic {
+    padding-left: 30px;
+}
+
+.text {
+    padding-right: 30px;
+    font-size: 2rem;
+}
+
+/* About section */
+
+.box-about {
+    flex-wrap: nowrap;
+}
+
+.box-interests {
+    flex-wrap: nowrap;
+}
+
+.image-pole img, .image-dog img {
+    width: 400px;
+    height: 400px;
+}
+
+
+/* Experience section */
+
+.box-knowledge {
+    flex-wrap: nowrap;
+}
+
+.box-1-knowledge, .box-2-knowledge {
+    text-align: start;
+}
+
+
+/* Projects */
+
+.project-flex img {
+    width: 350px;
+    height: 250px;
+}
+}
+
+
+@media (min-width: 1000px){
+.sections {
+    margin: 0 6rem;
+}
 
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #desktop-nav {
         display: none;
     }
@@ -11,4 +77,13 @@
     #hamburger-nav {
         display: flex;
     }
+
+    .project-flex {
+        flex-wrap: wrap;
+    }
+
+    .project-flex {
+        max-width: 500px;
+    }
+    
 }
