@@ -9,7 +9,10 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 200%;
+}
+
+main {
+line-height: 200%;
 }
 
 .title {
@@ -40,6 +43,10 @@ h1, .logo-name, .logo-frontend, .banner {
 
 .logo-name {
     font-size: 1.5rem;
+}
+
+.text {
+    line-height: 200%;
 }
 
 .logo-frontend {
