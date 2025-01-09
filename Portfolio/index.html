@@ -54,10 +54,10 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li class="menu-link"><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li class="menu-link"><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li class="menu-link"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li class="menu-link"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </div>
         </div>
       </nav>
@@ -101,6 +101,7 @@
           />
         </div>
       </section>
+
       <section class="about" id="about">
         <div class="title">
           <h1>Get to know me</h1>
@@ -141,6 +142,7 @@
           </div>
         </div>
       </section>
+      
       <section class="experience" id="experience">
         <div class="title">
           <h1>Experience</h1>
@@ -299,13 +301,29 @@
       </section>
 
       <section class="contact" id="contact">
+        <div class="title">
         <h1>Contact Me</h1>
+        </div>
+        <div class="contact-container">
+          <div class="mail">
         <h2>Mail</h2>
         <p>gydalofthus@hotmail.com</p>
+      </div>
+      <div class="linkedin">
         <h2>Linkedin</h2>
-        <p>Gyda Lofthus</p>
+        <p class="linkedin-link" onclick="window.open('https://www.linkedin.com/in/gyda-lofthus-301069291/')">Gyda Lofthus</p>
+      </div>
+      </div>
       </section>
+      <div class="title">
+        <div class="nav-top-btn">
       <a href="#desktop-nav">To the top</a>
+    </div>
+    </div>
     </main>
+    <footer>
+      <p>&copy;Copyright 2025 - Gyda Lofthus.</p>
+      <p>gydalofthus@hotmail.com</p>
+    </footer>
   </body>
 </html>

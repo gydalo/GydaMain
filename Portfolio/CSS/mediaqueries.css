@@ -3,6 +3,9 @@
     padding: 15px 30px 15px 30px;
 }
 
+.title {
+    padding-bottom: 40px;
+}
 
 /* Profile section */
 
@@ -28,12 +31,14 @@
 
 /* About section */
 
-.box-about {
+.box-about, .box-interests {
     flex-wrap: nowrap;
+    max-width: 900px;
+    
 }
 
-.box-interests {
-    flex-wrap: nowrap;
+.box-1-about {
+    padding: 20px 20px 0px 20px;
 }
 
 .image-pole img, .image-dog img {
@@ -50,8 +55,13 @@
 
 .box-1-knowledge, .box-2-knowledge {
     text-align: start;
+    flex: 0 1 auto;
+    padding: 60px 60px 0px 60px;
 }
 
+.box-2-knowledge {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 
 /* Projects */
 
@@ -59,12 +69,33 @@
     width: 350px;
     height: 250px;
 }
+
+/* Contact */
+.mail, .linkedin {
+    flex: 50%;
+}
+
+.nav-top-btn {
+    padding-top: 100px;
+}
+
+/* Footer */
+footer {
+    padding: 50px;
+    margin-top: 100px;
+}
+
 }
 
 
 @media (min-width: 1000px){
 .sections {
     margin: 0 6rem;
+}
+
+.title {
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 
 }
@@ -83,7 +114,8 @@
     }
 
     .project-flex {
-        max-width: 500px;
+        max-width: 400px;
     }
+
     
 }
