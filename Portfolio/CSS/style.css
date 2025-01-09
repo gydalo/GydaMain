@@ -83,7 +83,6 @@ a, button {
 }
 
 
-
 button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
     cursor: pointer;
@@ -91,6 +90,8 @@ button:hover {
 }
 
 /* Banner */
+
+/*
 .banner{
     display: flex;
     align-items: center;
@@ -117,6 +118,7 @@ button:hover {
     }
 }
 
+*/
 
 /* NAV */
 
