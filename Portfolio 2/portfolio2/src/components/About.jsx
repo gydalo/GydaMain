@@ -4,7 +4,7 @@ import poleImg from "../../public/assets/images/pole.jpeg";
 
 const About = () => {
   return (
-    <div>
+    <div className="about">
       <div className="title">
         <h1>Get to know me</h1>
       </div>

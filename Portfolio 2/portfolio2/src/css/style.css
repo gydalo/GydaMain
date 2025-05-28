@@ -98,6 +98,10 @@ button:hover {
   filter: drop-shadow(10px 10px 4px #00000026);
 }
 
+.home, .about, .experience, .projects, .contact {
+margin-bottom: 110px;
+}
+
 /* Banner */
 
 /*
