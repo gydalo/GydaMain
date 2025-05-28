@@ -1,4 +1,4 @@
-import { Layout, Home  } from "../components";
+import { Layout, Home, Experience, Contact, Projects, About  } from "../components";
 import React from "react";
 
 
@@ -6,7 +6,10 @@ function HomePage() {
     return (
       <Layout>
         <Home />
-        {/* You can add other components like About, Experience, Projects, Contact here */}
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
       </Layout>
     );
   }
