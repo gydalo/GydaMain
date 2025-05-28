@@ -446,6 +446,14 @@ section {
   padding-top: 40px;
 }
 
+.project-card {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .project-flex img {
   width: 300px;
   height: auto;
