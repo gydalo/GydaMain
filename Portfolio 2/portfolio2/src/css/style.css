@@ -4,7 +4,6 @@
 html {
   font-size: 1rem;
   scroll-behavior: smooth;
-  filter: drop-shadow(10px 10px 4px #00000026);
 }
 
 * {
@@ -15,6 +14,26 @@ html {
 
 main {
 line-height: 200%;
+filter: drop-shadow(10px 10px 4px #00000026);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
+  transition: filter 0.3s ease;
+}
+
+.header.scrolled {
+  filter: drop-shadow(10px 10px 4px #00000026);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: white;
 }
 
 .title {
@@ -69,7 +88,7 @@ h2, .nav-links, .menu-links, .nav-top-btn {
   padding-top: 50px;
 }
 
-p, button {
+p, button, .scroll-to-top {
   font-family: "Gudea", sans-serif;
   font-weight: 400;
   text-decoration: none;
@@ -100,7 +119,10 @@ button:hover {
 
 .home, .about, .experience, .projects, .contact {
 margin-bottom: 110px;
+margin-top: 30px;
 }
+
+
 
 /* Banner */
 
@@ -276,6 +298,7 @@ a:hover {
 .btn-white:hover {
   background-color: #484848;
   color: white;
+  outline: none;
 }
 
 .btn-gray:hover {
@@ -301,14 +324,23 @@ a:hover {
   padding-top: 30px;
 }
 
-/* Sections */
-section {
-  padding-top: 10vh;
-  margin: 0 1rem;
-  box-sizing: border-box;
-  min-height: fit-content;
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
 }
 
+.scroll-to-top:hover {
+  filter: drop-shadow(10px 10px 4px #00000026);
+  cursor: pointer;
+}
 
 /* Profile section */
 .profile-pic img {

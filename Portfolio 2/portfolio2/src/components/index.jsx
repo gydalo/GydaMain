@@ -7,5 +7,6 @@ export { default as Contact } from "./Contact";
 export { default as Experience } from "./Experience";
 export { default as Projects } from "./Projects";
 export { default as About } from "./About";
+export { default as ScrollToTopButton } from "./ScrollToTopButton";
 
 { /* Exporting other components for the portfolio - About, Experience, Projects... */ }

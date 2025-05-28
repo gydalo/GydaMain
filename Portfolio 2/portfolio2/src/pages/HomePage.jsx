@@ -1,9 +1,17 @@
-import { Layout, Home, Experience, Contact, Projects, About  } from "../components";
+import {
+  Layout,
+  Home,
+  Experience,
+  Contact,
+  Projects,
+  About,
+  ScrollToTopButton,
+} from "../components";
 import React from "react";
 
-
 function HomePage() {
-    return (
+  return (
+    <>
       <Layout>
         <Home />
         <About />
@@ -11,7 +19,9 @@ function HomePage() {
         <Projects />
         <Contact />
       </Layout>
-    );
-  }
+      <ScrollToTopButton />
+    </>
+  );
+}
 
-  export default HomePage;
+export default HomePage;

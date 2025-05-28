@@ -6,7 +6,7 @@ import cvPdf from "../../public/assets/images/CV-engelsk.pdf";
 
 const Home = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="text-profile-pic">
         <div className="text">
           <h1>Hi, my</h1>
