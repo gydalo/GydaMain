@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +21,10 @@ const Header = () => {
     <header className={`header ${scrolled ? "scrolled" : ""}`} id="header">
       {/* Desktop Nav */}
       <nav id="desktop-nav">
-        <div className="logo-name">
+        <Link to="/" className="logo-name">
           Gyda Lofthus <br />
-          <div className="logo-frontend">Frontend Developer</div>
-        </div>
+          <span className="logo-frontend">Frontend Developer</span>
+        </Link>
         <ul className="nav-links">
           <li>
             <a href="#about">About</a>
@@ -42,10 +43,10 @@ const Header = () => {
 
       {/* Hamburger Nav */}
       <nav id="hamburger-nav">
-        <div className="logo-name">
+        <Link to="/" className="logo-name">
           Gyda Lofthus <br />
-          <div className="logo-frontend">Frontend Developer</div>
-        </div>
+          <span className="logo-frontend">Frontend Developer</span>
+        </Link>
         <div className="hamburger-menu">
           <div
             className={`hamburger-icon ${menuOpen ? "open" : ""}`}

@@ -40,6 +40,10 @@ header {
   background: white;
 }
 
+.logo-link {
+  text-decoration: none;
+}
+
 .layout-container {
   min-height: 100vh;
   display: flex;
@@ -86,7 +90,9 @@ h1, .logo-name, .logo-frontend, .banner {
 }
 
 .logo-frontend:hover, .logo-name:hover {
-  cursor: default;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 h2, .nav-links, .menu-links, .nav-top-btn {
