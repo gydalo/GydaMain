@@ -4,6 +4,7 @@
 html {
   font-size: 1rem;
   scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
 }
 
 * {
@@ -497,6 +498,23 @@ a:hover {
   object-position: center;
 }
 
+.image-projects img {
+  transition: transform 0.3s ease;
+}
+
+.image-projects:hover img {
+  transform: scale(1.05);
+}
+
+.read-more-link {
+  color: inherit;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.read-more-link:hover {
+  text-decoration: none;
+}
 
 .hotview, .rainy-days, .csm {
 padding: 20px;
