@@ -344,6 +344,7 @@ a:hover {
 /* Scroll to top button */
 .scroll-to-top {
   position: fixed;
+  background-color: white;
   bottom: 30px;
   right: 30px;
   z-index: 999;
@@ -574,7 +575,6 @@ justify-content: center;
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
-  font-family: 'Rokkitt', serif;
   line-height: 1.6;
 }
 
