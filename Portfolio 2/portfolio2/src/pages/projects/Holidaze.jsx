@@ -26,12 +26,32 @@ const media = [
   },
 ];
 
+const project = {
+  liveUrl: "https://holidazegydalo.netlify.app/",
+  githubUrl: "https://github.com/gydalo/holidaze",
+};
+
 function ProjectPage() {
   return (
     <>
       <Layout>
         <div className="projectpage-container">
           <MediaGallery media={media} />
+
+          <div className="btn-projects">
+            <button
+              className="btn-gray"
+              onClick={() => window.open(project.liveUrl, "_blank")}
+            >
+              Live demo
+            </button>
+            <button
+              className="btn-white"
+              onClick={() => window.open(project.githubUrl, "_blank")}
+            >
+              Github
+            </button>
+          </div>
           <h1>Holidaze - Semester Project 2</h1>
 
           <p>
