@@ -95,7 +95,7 @@ h1, .logo-name, .logo-frontend, .banner {
   color: black;
 }
 
-h2, .nav-links, .menu-links, .nav-top-btn {
+h2, h3, h4, .nav-links, .menu-links, .nav-top-btn {
   font-family: "Rokkitt", serif;
   font-weight: 400;
 }
@@ -104,7 +104,7 @@ h2, .nav-links, .menu-links, .nav-top-btn {
   padding-top: 50px;
 }
 
-p, button, .scroll-to-top {
+p, li, ul, button, .scroll-to-top {
   font-family: "Gudea", sans-serif;
   font-weight: 400;
   text-decoration: none;
