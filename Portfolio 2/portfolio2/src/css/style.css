@@ -113,6 +113,22 @@ p, li, ul, button, .scroll-to-top {
   
 }
 
+p, h2, h3, h4 {
+  margin-top: 0.25rem;
+
+}
+
+ul {
+  padding-left: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  list-style-type: disc;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
 button {
   font-size: 1rem;
   background-color: #ffffff00;
@@ -588,7 +604,7 @@ justify-content: center;
 .media-main {
   width: 100%;
   max-width: 900px;
-  height: 400px;
+  height: 300px;
   margin-bottom: 1rem;
 }
 
@@ -628,6 +644,10 @@ justify-content: center;
   height: 80px;
   object-fit: cover;
   border-radius: 6px;
+}
+
+.project-description {
+  line-height: 2rem;
 }
 
 

@@ -55,8 +55,8 @@ const Projects = () => {
               </Link>
               <div className="text-projects">
                 <p>
-                <Link to={route} className="read-more-link">
-                  {project.description}
+                  <Link to={route} className="read-more-link">
+                    {project.description}
                   </Link>
                 </p>
               </div>
